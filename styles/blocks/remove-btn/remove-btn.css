@@ -1,0 +1,34 @@
+.remove-btn {
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  display: flex;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity .5s ease-in, transform .5s ease-in;
+  transform: rotate(45deg) scale(1);
+  right: -16px;
+}
+.remove-btn:hover{
+  transform: rotate(45deg) scale(.9);
+}
+.remove-btn:hover:before, .remove-btn:hover:after{
+  background-color: #000000;
+}
+
+.remove-btn:before, .remove-btn:after {
+  content: "";
+  background: #fff;
+  width: 5px;
+  height: 100%;
+  transition: background-color .5s ease-in;
+  position: absolute;
+  right: calc(50% - 5px);
+}
+
+.remove-btn:before {
+  transform: rotate(90deg);
+}
