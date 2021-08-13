@@ -20,6 +20,13 @@ popup.addEventListener("click", function () {
   }
 });
 
+window.addEventListener("keydown", function (e){
+  if (popup.classList.contains("popup_active")) {
+    if (e.keyCode === 27) {
+      popup.classList.remove("popup_active");
+    }
+  }
+})
 // Check form
 inputFormAddTask.addEventListener("input", function () {
   if (inputFormAddTask.value !== "" && inputFormAddTask.value.length >= 5) {
