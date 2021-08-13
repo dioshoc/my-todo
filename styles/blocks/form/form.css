@@ -1,0 +1,16 @@
+@import "__submit-btn/form__submit-btn.css";
+@import "__input/form__input.css";
+@import "__textarea/form__textarea.css";
+
+.form{
+  width: 100%;
+}
+.form label{
+  color: #000000;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+.form__required{
+  color: #257189;
+}
