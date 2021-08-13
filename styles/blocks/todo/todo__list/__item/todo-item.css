@@ -1,0 +1,84 @@
+.todo-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #E1E1E1;
+    border-radius: 28px;
+    padding: 20px 50px;
+    margin-bottom: 15px;
+    transition: background-color 200ms ease-in;
+    box-sizing: border-box;
+}
+
+.todo-item__title {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    transition: color 200ms ease-in;
+}
+
+.todo-item__subtitle {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 300;
+    transition: color 200ms ease-in;
+}
+.todo-item:hover{
+    background-color: #FFCDCD;
+}
+.todo-item:hover .todo-item__title,
+.todo-item:hover .todo-item__subtitle{
+    color: #ff0000;
+}
+.todo-item__remove-btn{
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    background: none;
+    border: none;
+    transform: translate(-50%, -50%);
+    right: calc(50px - 34px);
+    top: 50%;
+    cursor: pointer;
+    transition: opacity 200ms ease-in;
+}
+.todo-item:hover .todo-item__remove-btn{
+    visibility: visible;
+    opacity: 1;
+}
+.todo-item__remove-btn:before,
+.todo-item__remove-btn:after{
+    content: "";
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    background: #fff;
+    width: 5px;
+    height: 66px;
+    right: 25px;
+    transition: visibility 200ms ease-in, background-color 200ms ease-in, height 200ms ease-in, width 200ms ease-in;
+}
+.todo-item__remove-btn:after{
+    transform: rotate(45deg);
+}
+.todo-item__remove-btn:before{
+    transform: rotate(-45deg);
+}
+.todo-item:hover .todo-item__remove-btn:before{
+    visibility: visible;
+}
+.todo-item:hover .todo-item__remove-btn:after{
+    visibility: visible;
+}
+.todo-item__remove-btn:hover:before,
+.todo-item__remove-btn:hover:after{
+    background-color: #000000;
+    width: 4px;
+    height: 58px;
+}

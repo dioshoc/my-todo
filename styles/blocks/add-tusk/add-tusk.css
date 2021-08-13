@@ -1,0 +1,49 @@
+.add-tusk {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.add-tusk__button {
+    position: relative;
+    display: flex;
+    width: 123px;
+    height: 123px;
+    background-color: #257189;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+    padding: 0;
+}
+
+.add-tusk__button:hover {
+    background-color: #3291AF;
+}
+
+.add-tusk__button_active {
+    background-color: #4EC3E9;
+}
+
+.add-tusk__button:before,
+.add-tusk__button:after {
+    content: '';
+    display: flex;
+    position: absolute;
+    background-color: #F5F5F5;
+    width: 82px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+}
+
+.add-tusk__button:before {
+    margin-left: calc(-82px / 2);
+    margin-top: calc(-12px / 2);
+}
+
+.add-tusk__button:after {
+    transform: rotate(90deg);
+    margin-left: calc(-82px / 2);
+    margin-top: calc(-12px / 2);
+}

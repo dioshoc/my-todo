@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@import "blocks/todo/todo.css";
+@import "blocks/add-tusk/add-tusk.css";
+body{
+    background-color: #CDDDE2;
+    font-family: 'Roboto', sans-serif;
+}
