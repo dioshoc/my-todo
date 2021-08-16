@@ -34,7 +34,7 @@ function removePopup() {
   clearForm(popup.querySelector('form'));
 
   const formError = document.querySelectorAll('.error')
-  formError.forEach( function (element) {
+  formError.forEach(function (element) {
     element.remove();
   })
 }
@@ -52,10 +52,8 @@ popup.addEventListener("click", function (elem) {
 });
 
 window.addEventListener("keydown", function (e) {
-  if (popup.classList.contains("popup_active")) {
-    if (e.key === 'Escape') {
-      removePopup();
-    }
+  if (e.key === 'Escape' && popup.classList.contains("popup_active")) {
+    removePopup();
   }
 });
 
