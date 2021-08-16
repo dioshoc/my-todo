@@ -15,9 +15,8 @@
     <h1 class="todo__title">
       TODO List
     </h1>
-    <ul class="todo__list">
-
-    </ul>
+    <p class="todo__subtitle">Задач сейчас нет. Добавьте вашу первую задачу!</p>
+    <ul class="todo__list"></ul>
   </section>
   <button class="add-task__button">
     <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,33 +25,59 @@
     </svg>
   </button>
 </main>
+
 <div class="popup">
   <div class="popup__content">
-    <div class="popup__close remove-btn"></div>
-    <form action="#" class="form" name="addTask">
-      <div class="form__input">
-        <label for="form-title">Задача</label>
-        <input type="text" id="form-title" name="taskTitle" placeholder="Введите имя задачи" value="" required
-               minlength="5" maxlength="30">
+    <button class="popup__close remove-btn"></button>
+
+    <form class="form" id="addTask">
+      <div class="form-field form-field__first">
+        <label
+          class="form__label"
+          for="add-task__task-input"
+        >Задача</label>
+        <input
+          class="form__input-task"
+          type="text"
+          required
+          id="add-task__task-input"
+          placeholder="Введите имя задачи"
+          minlength="5"
+          maxlength="30"
+        >
       </div>
-      <div class="form__textarea">
-        <label for="form-textarea">Заметка</label>
-        <textarea id="form-textarea" name="taskSubtitle" placeholder="Введите имя задачи"
-                  maxlength="300"></textarea>
+      <div class="form-field form-field__second">
+        <label
+          class="form__label"
+          for="add-task__task-textarea"
+        >Заметка</label>
+        <textarea
+          class="form__input-note"
+          id="add-task__task-textarea"
+          placeholder="Введите имя задачи"
+          maxlength="300"
+        ></textarea>
       </div>
-      <button type="submit" class="form__submit-btn" disabled>Сохранить</button>
+      <button
+        type="submit"
+        class="form__submit-btn"
+        disabled
+      >Сохранить
+      </button>
     </form>
   </div>
 </div>
-<div class="template">
+
+<template class="task-card__template template">
   <li class="todo__item todo-item">
-    <div class="todo__content">
+    <div class="todo-item__content">
       <h3 class="todo-item__title"></h3>
       <p class="todo-item__subtitle"></p>
     </div>
     <button class="todo-item__remove-btn remove-btn"></button>
   </li>
-</div>
+</template>
+
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

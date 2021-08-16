@@ -18,15 +18,17 @@
   text-align: center;
   color: #fff;
   cursor: pointer;
+  user-select: none;
 
   transition: background-color .5s ease-in, border-color .5s ease-in, color .5s ease-in;
+}
+.form__submit-btn:hover{
+  background-color: #B3DDF4;
+  border-color: #8ACDF1;
 }
 .form__submit-btn:disabled{
   color: #747474;
   background-color: #CCCCCC;
   border-color: #CCCCCC;
-}
-.form__submit-btn:hover{
-  background-color: #B3DDF4;
-  border-color: #8ACDF1;
+  cursor: default;
 }

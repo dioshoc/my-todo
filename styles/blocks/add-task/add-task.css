@@ -13,6 +13,7 @@
   padding: 0;
   bottom: 50px;
   right: 50px;
+  outline: none;
 }
 
 .add-task__button:hover {

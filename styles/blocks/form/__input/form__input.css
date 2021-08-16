@@ -1,27 +1,22 @@
-.form__input{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 53px;
-}
-.form__input input{
+.form__input-task{
   width: 100%;
+  max-height: 64px;
   padding: 20px 16px 18px;
   background-color: #EFEFEF;
-  border: 2px solid #6CB1D800;
+  border: 2px solid transparent;
   color: #000000;
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
   box-sizing: border-box;
-  max-height: 64px;
+  outline: none;
 }
-.form__input input::placeholder{
+.form__input-task::placeholder{
   font-weight: 300;
   color: #B7B7B7;
   font-size: 18px;
   line-height: 21px;
 }
-.form__input input:focus, .form__input input:focus-visible{
+.form__input-task:focus{
   border-color: #6CB1D8;
-  outline: none;
 }
