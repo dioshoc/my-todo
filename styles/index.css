@@ -9,3 +9,7 @@ body {
   background-color: #CDDDE2;
   font-family: 'Roboto', sans-serif;
 }
+
+body *{
+  font-family: 'Roboto', sans-serif;
+}

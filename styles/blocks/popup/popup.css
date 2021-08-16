@@ -12,8 +12,8 @@
   transition: opacity .5s ease-in ;
 }
 .popup_active{
-  top: 0;
   opacity: 1;
+  top: 0;
 }
 .popup__content{
   padding: 80px 115px 40px ;
@@ -30,4 +30,7 @@
   right: -40px;
   top: -42px;
   opacity: 1;
+}
+.popup__close:hover{
+  transform: rotate(45deg) scale(1.1);
 }
