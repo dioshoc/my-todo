@@ -1,9 +1,9 @@
 @import "__item/todo-item.css";
 
 .todo__list{
-    display: flex;
+    display: none;
     flex-direction: column;
-    padding: 30px 24px 135px 24px;
+    padding: 31px 24px;
     background-color: #FBFBFB;
     border-radius: 10px;
 }

@@ -1,0 +1,11 @@
+.form-field{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-field__first{
+  margin-bottom: 53px;
+}
+.form-field__second{
+  margin-bottom: 43px;
+}

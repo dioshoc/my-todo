@@ -1,0 +1,25 @@
+.form__input-note {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 121px;
+  padding: 20px 16px 18px;
+  background-color: #EFEFEF;
+  border: 2px solid #6CB1D800;
+  color: #000000;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form__input-note::placeholder {
+  font-weight: 300;
+  color: #B7B7B7;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.form__input-note:focus {
+  border-color: #6CB1D8;
+}

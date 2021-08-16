@@ -1,35 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Document</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <title>ToDo list</title>
 </head>
 <body>
 <main>
-    <section class="todo">
-        <h1 class="todo__title">TODO List</h1>
-        <div class="todo__list">
-            <div class="todo__item todo-item">
-                <div class="todo-item__title">Title</div>
-                <div class="todo-item__subtitle">SubTitle</div>
-                <button class="todo-item__remove-btn"></button>
-            </div>
-            <div class="todo__item todo-item">
-                <div class="todo-item__title">Title</div>
-                <div class="todo-item__subtitle">SubTitle</div>
-                <button class="todo-item__remove-btn"></button>
-            </div>
-        </div>
-    </section>
-    <aside class="add-tusk">
-        <button class="add-tusk__button" onclick="this.classList.toggle('add-tusk__button_active')"></button>
-    </aside>
+  <section class="todo">
+    <h1 class="todo__title">
+      TODO List
+    </h1>
+    <p class="todo__subtitle">Задач сейчас нет. Добавьте вашу первую задачу!</p>
+    <ul class="todo__list"></ul>
+  </section>
+  <button class="add-task__button">
+    <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="35" width="12" height="82" fill="#F5F5F5"/>
+      <rect y="47" width="12" height="82" transform="rotate(-90 0 47)" fill="#F5F5F5"/>
+    </svg>
+  </button>
 </main>
+
+<div class="popup">
+  <div class="popup__content">
+    <button class="popup__close remove-btn"></button>
+
+    <form class="form" id="addTask">
+      <div class="form-field form-field__first">
+        <label
+          class="form__label"
+          for="add-task__task-input"
+        >Задача</label>
+        <input
+          class="form__input-task"
+          type="text"
+          required
+          id="add-task__task-input"
+          placeholder="Введите имя задачи"
+          minlength="5"
+          maxlength="30"
+        >
+      </div>
+      <div class="form-field form-field__second">
+        <label
+          class="form__label"
+          for="add-task__task-textarea"
+        >Заметка</label>
+        <textarea
+          class="form__input-note"
+          id="add-task__task-textarea"
+          placeholder="Введите имя задачи"
+          maxlength="300"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="form__submit-btn"
+        disabled
+      >Сохранить
+      </button>
+    </form>
+  </div>
+</div>
+
+<template class="task-card__template template">
+  <li class="todo__item todo-item">
+    <div class="todo-item__content">
+      <h3 class="todo-item__title"></h3>
+      <p class="todo-item__subtitle"></p>
+    </div>
+    <button class="todo-item__remove-btn remove-btn"></button>
+  </li>
+</template>
+
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
