@@ -12,7 +12,6 @@ function removePopup() {
 // Open and Close popup
 openPopupButton.addEventListener("click", () => {
   popup.classList.add("popup_active");
-  this.setAttribute("active");
 });
 
 closePopupButton.addEventListener("click", () => {
