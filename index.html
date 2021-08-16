@@ -35,14 +35,14 @@
 <section class="popup">
   <div class="popup__content">
     <div class="popup__close remove-btn"></div>
-    <form action="#" class="form">
+    <form action="#" class="form" name="addTodo">
       <div class="form__input">
         <label for="form-title">Задача<span class="form__required">*</span></label>
-        <input type="text" id="form-title" placeholder="Введите имя задачи" value="" required minlength="5" maxlength="30">
+        <input type="text" id="form-title" name="todoTitle" placeholder="Введите имя задачи" value="" required minlength="5" maxlength="30">
       </div>
       <div class="form__textarea">
         <label for="form-textarea">Заметка</label>
-        <textarea id="form-textarea" placeholder="Введите имя задачи" maxlength="300"></textarea>
+        <textarea id="form-textarea" name="todo-subtitle" placeholder="Введите имя задачи" maxlength="300"></textarea>
       </div>
       <button type="submit" class="form__submit-btn" disabled>Сохранить</button>
     </form>

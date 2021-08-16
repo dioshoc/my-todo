@@ -12,7 +12,6 @@ function removePopup() {
 // Open and Close popup
 openPopupButton.addEventListener("click", () => {
   popup.classList.add("popup_active");
-  this.setAttribute("active");
 });
 
 closePopupButton.addEventListener("click", () => {
@@ -45,3 +44,9 @@ textareaFormAddTask.addEventListener('input', function () {
     this.style.height = this.scrollHeight + "px";
   }
 });
+
+document.forms.addTodo.onsubmit = function() {
+  let message = this.todoTitle.value;
+  console.log(message)
+  return false;
+};
