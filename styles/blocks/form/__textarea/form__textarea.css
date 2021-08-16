@@ -1,0 +1,30 @@
+.form__textarea{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 43px;
+}
+.form__textarea textarea{
+  width: 100%;
+  padding: 20px 16px 18px;
+  background-color: #EFEFEF;
+  border: 2px solid #6CB1D800;
+  color: #000000;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  resize: none;
+  min-height: 121px;
+  overflow: hidden;
+  transition: height .5s ease-in;
+}
+.form__textarea textarea::placeholder{
+  font-weight: 300;
+  color: #B7B7B7;
+  font-size: 18px;
+  line-height: 21px;
+}
+.form__textarea textarea:focus, .form__textarea textarea:focus-visible{
+  border-color: #6CB1D8;
+  outline: none;
+}

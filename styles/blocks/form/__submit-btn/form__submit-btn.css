@@ -1,0 +1,32 @@
+.form__submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  min-height: 70px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #6CB1D8;
+  border-radius: 16px;
+  background-color: #6CB1D8;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+
+  transition: background-color .5s ease-in, border-color .5s ease-in, color .5s ease-in;
+}
+.form__submit-btn:disabled{
+  color: #747474;
+  background-color: #CCCCCC;
+  border-color: #CCCCCC;
+}
+.form__submit-btn:hover{
+  background-color: #B3DDF4;
+  border-color: #8ACDF1;
+}

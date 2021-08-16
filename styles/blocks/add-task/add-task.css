@@ -1,0 +1,36 @@
+.add-task__button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 123px;
+  background-color: #257189;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color .5s ease-in;
+  padding: 0;
+  bottom: 50px;
+  right: 50px;
+}
+
+.add-task__button:hover {
+  background-color: #3291AF;
+}
+
+.add-task__button:hover svg rect {
+  fill: #C9E6EC;
+}
+
+.add-task__button:active svg rect {
+  fill: #C9E6EC;
+}
+
+.add-task__button:active {
+  background-color: #4EC3E9;
+}
+
+.add-task__button svg rect {
+  transition: fill .5s ease-in;
+}
